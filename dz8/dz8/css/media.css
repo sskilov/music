@@ -1,0 +1,453 @@
+@media only screen and (max-width : 1199px) {
+	.navigation {
+		padding-top: 5px;
+	}
+
+	.about:before {
+		display: none;
+	}
+
+	.footer__btn_call {
+		display: none;
+	}
+
+	.work__img {
+		display: none;
+	}
+
+	.services {
+		padding-bottom: 10px;
+	}
+
+	.under {
+		padding-top: 20px;
+	}
+
+	.side {
+		padding-top: 30px;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+	.consalting__btn {
+		margin-bottom: 30px;
+	}
+
+	.consalting__content {
+		display: block;
+		text-align: center;
+	}
+
+	.article__date {
+		bottom: 3px;
+	}
+
+	.consalting__text_left {
+		padding-right: 0px;
+	}
+
+	.form {
+		padding-left: 5px;
+	}
+	
+	.second-head{
+		padding-bottom: 15px;
+		padding-top: 5px;
+	}
+
+	.second-head__desc {
+		margin-top: 5px;
+	}
+
+	.tab {
+		justify-content: center;
+		padding-right: 0;
+		margin-top: 10px;
+	}
+
+	.form {
+		justify-content: space-between;
+	}
+
+	.form__sub {
+		width: 20%;
+	}	
+
+	.under__title {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.consultation {
+		margin: 5px auto;
+	}
+
+	.side {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.side__title {
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.reviews {
+		padding-top: 0px;
+	}
+
+	.lab-consult, .photos {
+		padding-top: 10px;
+	}
+
+	.lab-consult_title, .photos__title, .lab-consult_text {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.photos {
+		padding-bottom: 0;
+	}
+
+	.photos__img {
+		margin-bottom: 30px;
+	}
+
+	.photos__img_left {
+		text-align: right;
+	}
+
+	.photos__over {
+	padding-top: 107px;
+	top: 0;
+	left: 0;
+	width: 269px;
+	height: 269px;
+	}
+
+	.photos__over_left{
+		left: auto;
+		right: 0;
+	}
+
+}
+
+@media only screen and (max-width : 767px) {
+	.header {
+		height: auto;
+	}
+
+	.offer {
+		position: relative;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: center;
+	}
+
+	.offer__desc {
+		margin: 0 auto;
+		font-weight: 700;
+	}
+
+	.offer__social {
+		margin: 20px auto;
+	}
+
+	.navigation {
+		padding-top: 5px;
+	}
+
+	.menu {
+		margin: 0 auto;
+	}
+
+	.logo {
+		text-align: center;
+		display: block;
+		margin-bottom: 3px;
+	}
+
+	.navigation__btn_call {
+		display: none;
+	}
+
+	.merits__item, .lab__item {
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	.article {
+		width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.consalting__btn {
+		margin: 22px auto 30px;
+	}
+
+	.about__title {
+		text-align: center;
+		max-width: 100%;
+	}
+
+	.option {
+		text-align: center;
+	}
+
+	.footer__logo {
+		display: none;
+	}
+
+	.footer__credits {
+		width: 150px;
+		margin-left: auto;
+	}
+
+	.form {
+		width: 450px;
+		margin: 0 auto;
+		justify-content: space-between;
+	}
+
+	.form__sub {
+		width: 10%;
+	}
+
+	.search__top {
+		justify-content: center;
+	}
+
+	.tab__item span {
+		display: none;
+	}
+
+	.lawyer {
+		margin-top: 0;
+	}
+
+	.lawyer__title {
+		margin-bottom: 0;
+		text-align: center;
+	}
+
+	.lawyer__text {
+		display: none;
+	}
+
+	.services {
+		padding: 4px 0;
+	}
+
+	.goods {
+		width: 70%;
+		margin: 4px auto;
+	}
+	
+	.office {
+		padding: 15px;
+		width: 350px;
+	}
+
+	.office__content {
+		padding-top: 10px;
+	}
+
+	.office__socials {
+		display: none;
+	}
+
+	.office__contact, .office__desc {
+		width: 50%;
+	}
+
+	.office__tel {
+		font-size: 13px;
+	}
+
+	.privilege {
+		padding-left: 80px;
+	}
+
+}
+
+@media only screen and (max-width : 720px) {
+	.side {
+		display: block;
+		padding-top: 5px;
+	}
+
+	.side-nav {
+		width: 270px;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+
+	.side__title {
+		margin: 10px 0;
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	.menu {
+		width: 510px;
+	}
+
+	.menu__item {
+		margin-right: 10px;
+	}
+
+	.tab__item_about {
+		padding: 4px;
+	}
+}
+
+@media only screen and (max-width : 575px) {
+	.footer__credits {
+		width: 150px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.footer__contacts {
+		text-align: center;
+	}
+
+	.photos__img {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.photos__over {
+		left: 50%;
+		margin-left: -134.5px;
+	}
+}
+
+@media only screen and (max-width : 544px) {
+	.header {
+		position: relative;
+	}
+
+	.menu {
+		display: block;
+		width: 170px;
+		margin: 0;
+		margin-left: auto;
+	}
+
+	.logo {
+		position: absolute;
+	}
+
+	.menu__item {
+		display: block;
+		text-align: right;
+		font-size: 13px;
+	}
+	
+	.consalting__content {
+		display: block;
+		text-align: center;
+	}
+
+	.article {
+		width: 300px;
+	}
+
+	.form {
+		width: 80%;
+	}
+
+	.search__content {
+		display: none;
+	}
+
+	.tab__item {
+		width: 30%;
+		padding: 5px;
+	}
+
+	.goods {
+		width: 90%;
+		padding: 5px;
+	}
+
+	.goods__item {
+		width: 280px;
+		margin: 0 auto;
+	}
+
+	.slider {
+		width: 270px;
+	}
+	
+	.office {
+		margin: 0 auto;
+	}
+
+
+	.office:before {
+		display: none;
+	}
+
+	.tab__item_about {
+		font-size: 14px;
+	}
+
+	.privilege {
+		padding: 10px 0 10px 80px;
+	}	
+}
+
+@media only screen and (max-width : 460px) {
+	.logo {
+		width: 200px;
+	}
+
+	.tab__item {
+		padding: 0 3px;
+		font-size: 14px;
+	}
+
+	.goods {
+		width: 100%;
+	}
+
+	.office {
+		width: 270px;
+		padding: 15px 0;
+	}
+
+	.office__contact {
+		width: 90%;
+		text-align: center;
+	}
+
+	.office__desc {
+		display: none;
+	}
+
+	.tab_about {
+		display: none;
+	}
+
+	.offer {
+		padding: 20px 0 20px;
+	}
+
+	.offer__title {
+		font-size: 40px;
+	}
+
+	.offer__desc {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width : 360px) {
+	.logo {
+		width: 150px;
+	}
+
+

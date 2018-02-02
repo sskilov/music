@@ -1,0 +1,76 @@
+@import "main.css";
+
+.map {
+	background: url(../img/map.jpg) no-repeat center top;
+	padding: 47px 0 52px;
+}
+
+.office {
+	width: 470px;
+	background-color: rgba(88, 100, 122, 0.75);
+	border-radius: 5px;
+	position: relative;
+	padding: 27px 27px 43px;
+	color: #fff;
+	margin-left: auto;
+}
+
+.office:before {
+	content: '';
+	display: block;
+	width: 24px;
+	height: 48px;
+	background: url(../img/triangle.png) no-repeat;
+	position: absolute;
+	top: 14px;
+	left: -24px;
+}
+
+.about__title_white {
+	color: #fff;
+}
+
+.office__socials {
+	background-color: transparent;
+	padding: 8px 0;
+	width: 135px;
+	border: none;
+	position: absolute;
+	top: 14px;
+	right: 28px;
+}
+
+.social__item_white {
+	border-color: #fff;
+	color: #fff;
+}
+
+.office__content {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 40px;
+}
+
+.office__contact {
+	width: 200px;
+	font-size: 16px;
+}
+
+.office__tel {
+	display: block;
+	margin-bottom: 7px;
+}
+
+.office__adress {
+	margin-top: 21px;
+	margin-bottom: 21px;
+}
+
+.office__desc{
+	width: 186px;
+	font-size: 12px;
+}
+
+.office__text {
+	margin-bottom: 18px;
+}
