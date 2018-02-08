@@ -63,6 +63,10 @@ a:hover {
 	color: #3f4b60;
 }
 
+button:focus, button:active {
+	outline: none;
+}
+
 .dflex {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -118,6 +122,7 @@ a:hover {
 
 .container {
 	max-width: 1200px;
+	min-width: 320px;
 }
 
 .section__title {
@@ -147,7 +152,6 @@ a:hover {
 .header {
 	background: url(../img/main_bg.jpg) no-repeat top center / cover;
 	height: 100vh;
-	border-top: 5px solid #58647a;
 	position: relative;
 }
 
@@ -164,10 +168,19 @@ a:hover {
 
 .navigation {
 	border-bottom: 4px solid rgba(88, 100, 122, 0.0861);
+	border-top: 5px solid #58647a;	
 	background-color: rgba(191, 194, 200, 0.41);
 	padding-top: 17px;
 	padding-bottom: 7px;
 	position: relative;
+}
+
+.logo {
+	z-index: 500;
+}
+
+.logo:hover {
+	opacity: 1;
 }
 
 .menu {
@@ -665,11 +678,102 @@ a:hover {
 	color: #b81c31;
 }
 
-/*.tab__item:hover {
-	border: 2px solid #b81c31;
-	color: #b81c31;
-}*/
+/*form*/
+.mod {
+	position: fixed;
+	width: 300px;
+	display: none;
+	top: 50%;
+	margin-top: -150px;
+	left: 50%;
+	margin-left: -150px;
+	z-index: 51;
+}
 
+.mod_active {
+	display: block;
+}
+
+.mod__form {
+	display: block;
+	background: #fff;
+	outline: none;
+	margin: 0 auto;
+	text-align: center;
+	width: 300px;
+	border-radius: 10px;
+	padding: 5px 5px 5px;
+}
+
+.mod__title {
+	margin-bottom: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #3f4b60;
+	padding: 15px;
+	border-radius: 5px ;
+
+}
+
+.mod__input {
+	padding: 5px 10px;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	border: 1px solid #3f4b60;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.mod__sub {
+	display: block;
+	width: 100%;
+	background: #3f4b60;
+	border: none;
+	padding: 5px;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+.mod__overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none;
+	z-index: 50;
+}
+
+.mod__overlay_active {
+	display: block;
+}
+
+#overlay {
+    display: none;
+	position: fixed;
+	top: 50%;
+	margin-top: -150px;
+	left: 50%;
+	margin-left: -150px;
+	z-index: 100;
+}
+
+#thx {
+	display: block;
+	background: #fff;
+	outline: none;
+	text-align: center;
+	width: 300px;
+	height: 224px;
+	border-radius: 10px;
+	padding: 75px 50px;
+	font-size: 20px;
+	font-weight: 700;
+}
 
 
 

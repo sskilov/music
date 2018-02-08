@@ -100,6 +100,7 @@
 		</div>
 	</section>
 	<section class="map">
+		<div id="map"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -265,6 +266,46 @@
 			</div>
 		</div>
 	</footer>
+	<!-- form -->
+	<div class="mod">
+		<form action="success.php" class="js-form mod__form" id="popupResult" method="post">
+			<h5 class="mod__title">Заказать звонок</h5>
+	        <input type="text" name="name" required="" placeholder="Введите имя"  class="mod__input form-control">
+	        <input type="text" name="email" required="" id="getGA" placeholder="Введите E-mail"  class="mod__input form-control">
+	        <input type="text" name="tel" required="" placeholder="Введите телефон"  class="mod__input form-control">
+	        <button class="mod__sub" data-submit>Отправить</button>
+	    </form>		
+	</div>
+	<div class="mod__overlay"></div>
+    <div id="overlay">
+        <div id="thx">
+            Спасибо!<br>Мы обязательно вам перезвоним
+        </div>
+    </div>
+	<!-- form end -->	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>		
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>	
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [55.76, 39.64],
+                zoom: 7,
+                controls: []
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                hintContent: 'Москва!',
+                balloonContent: 'Столица России'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
 	<script src="js/common.js"></script>
 </body>
 </html>

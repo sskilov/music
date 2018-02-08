@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>HOME / LOB Consalting</title>
+	<title>HOME / LAB Consalting</title>
 	<meta name="description" content="Ваш надежный партнер в области транспортно-логистического сопровождения">
 	<meta name="keywords" content="Ваш надежный партнер в области транспортно-логистического сопровождения">
 	<!-- Favicon -->
@@ -103,7 +103,7 @@
 					</div>					
 				</div>
 			</div>
-			<a href="#" class="btn merits__btn">Подробнее</a>
+			<a href="#about" class="btn merits__btn go_to">Подробнее</a>
 		</div>
 		<div class="lab">
 			<div class="container">
@@ -139,7 +139,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-9">
@@ -317,6 +317,25 @@
 			</div>
 		</div>
 	</footer>
+	<!-- form -->
+	<div class="mod">
+		<form action="success.php" class="js-form mod__form" id="popupResult" method="post">
+			<h5 class="mod__title">Заказать звонок</h5>
+	        <input type="text" name="name" required="" placeholder="Введите имя"  class="mod__input form-control">
+	        <input type="text" name="email" required="" id="getGA" placeholder="Введите E-mail"  class="mod__input form-control">
+	        <input type="text" name="tel" required="" placeholder="Введите телефон"  class="mod__input form-control">
+	        <button class="mod__sub" data-submit>Отправить</button>
+	    </form>		
+	</div>
+	<div class="mod__overlay"></div>
+    <div id="overlay">
+        <div id="thx">
+            Спасибо!<br>Мы обязательно вам перезвоним
+        </div>
+    </div>
+	<!-- form end -->	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>

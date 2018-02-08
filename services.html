@@ -22,7 +22,7 @@
 	<!-- Файлы стилей -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/jquery.bxslider.min.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/services.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -192,49 +192,37 @@
 						</div>
 						<div class="reviews">
 							<h4 class="side__title">Отзывы</h4>
-							<div class="slider">
-								<div>
-									<div class="sliderr">
-										<div class="slider__img">
-											<img src="img/person.png" alt="авв">
-										</div>	
-										<div class="slider__name">Валерий Цукерберг</div>
-										<p class="slider__text">
-											al exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy
-										</p>
-										<div class="slider__social">
-											<i class="fa fa-facebook"></i>
-										</div>
-									</div>									
+							<div class="person-slider">
+								<div class="person">
+									<img src="img/person.png" alt="" class="person__img">
+									<div class="person__name">Валерий Цукерберг</div>
+									<p class="person__text">
+										al exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy
+									</p>
+									<div class="person__social">
+										<i class="fa fa-facebook"></i>
+									</div>
 								</div>
-								<div>
-									<div class="sliderr">
-										<div class="slider__img">
-											<img src="img/person.png" alt="авв">
-										</div>	
-										<div class="slider__name">Николай Цукерберг</div>
-										<p class="slider__text">
-											al exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy
-										</p>
-										<div class="slider__social">
-											<i class="fa fa-facebook"></i>
-										</div>
-									</div>									
+								<div class="person">
+									<img src="img/person.png" alt="" class="person__img">
+									<div class="person__name">Никола Цукерберг</div>
+									<p class="person__text">
+										al exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy
+									</p>
+									<div class="person__social">
+										<i class="fa fa-facebook"></i>
+									</div>
 								</div>
-								<div>
-									<div class="sliderr">
-										<div class="slider__img">
-											<img src="img/person.png" alt="авв">
-										</div>	
-										<div class="slider__name">Иван Цукерберг</div>
-										<p class="slider__text">
-											al exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy
-										</p>
-										<div class="slider__social">
-											<i class="fa fa-facebook"></i>
-										</div>
-									</div>									
-								</div>															
+								<div class="person">
+									<img src="img/person.png" alt="" class="person__img">
+									<div class="person__name">Иван Цукерберг</div>
+									<p class="person__text">
+										al exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy
+									</p>
+									<div class="person__social">
+										<i class="fa fa-facebook"></i>
+									</div>
+								</div>																
 							</div>
 						</div>
 					</aside>
@@ -362,8 +350,27 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.bxslider.min.js"></script>
+	<!-- form -->
+	<div class="mod">
+		<form action="success.php" class="js-form mod__form" id="popupResult" method="post">
+			<h5 class="mod__title">Заказать звонок</h5>
+	        <input type="text" name="name" required="" placeholder="Введите имя"  class="mod__input form-control">
+	        <input type="text" name="email" required="" id="getGA" placeholder="Введите E-mail"  class="mod__input form-control">
+	        <input type="text" name="tel" required="" placeholder="Введите телефон"  class="mod__input form-control">
+	        <button class="mod__sub" data-submit>Отправить</button>
+	    </form>		
+	</div>
+	<div class="mod__overlay"></div>
+    <div id="overlay">
+        <div id="thx">
+            Спасибо!<br>Мы обязательно вам перезвоним
+        </div>
+    </div>
+	<!-- form end -->		
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>	
+	<script src="js/slick.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="js/services.js"></script>
 </body>
 </html>

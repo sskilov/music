@@ -22,6 +22,7 @@
 	<!-- Файлы стилей -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/lightbox.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/about.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -153,27 +154,27 @@
 					<h3 class="section__title_small photos__title">Фото наших мощностей</h3>
 				</div>
 				<div class="col-lg-3 col-sm-6">
-					<div class="photos__img  photos__img_left">
+					<div href="#" class="photos__img  photos__img_left">
 						<img src="img/photo-1.jpg" alt="photo">
-						<a href="#" class="photos__over photos__over_left"><i class="fa fa-expand"></i></a>
+						<a href="img/photo-1.jpg" data-lightbox="roadtrip" class="photos__over photos__over_left"><i class="fa fa-expand"></i></a>
 					</div>	
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="photos__img  photos__img_right">
 						<img src="img/photo-2.jpg" alt="photo">
-						<a href="#" class="photos__over"><i class="fa fa-expand"></i></a>
+						<a href="img/photo-2.jpg" data-lightbox="roadtrip" class="photos__over"><i class="fa fa-expand"></i></a>
 					</div>						
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="photos__img  photos__img_left">
 						<img src="img/photo-3.jpg" alt="photo">
-						<a href="#" class="photos__over photos__over_left"><i class="fa fa-expand"></i></a>
+						<a href="img/photo-3.jpg" data-lightbox="roadtrip" class="photos__over photos__over_left"><i class="fa fa-expand"></i></a>
 					</div>	
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<div class="photos__img  photos__img_right">
 						<img src="img/photo-4.jpg" alt="photo">
-						<a href="#" class="photos__over"><i class="fa fa-expand"></i></a>
+						<a href="img/photo-4.jpg" data-lightbox="roadtrip" class="photos__over"><i class="fa fa-expand"></i></a>
 					</div>	
 				</div>								
 			</div>
@@ -299,6 +300,26 @@
 			</div>
 		</div>
 	</footer>
+	<!-- form -->
+	<div class="mod">
+		<form action="success.php" class="js-form mod__form" id="popupResult" method="post">
+			<h5 class="mod__title">Заказать звонок</h5>
+	        <input type="text" name="name" required="" placeholder="Введите имя"  class="mod__input form-control">
+	        <input type="text" name="email" required="" id="getGA" placeholder="Введите E-mail"  class="mod__input form-control">
+	        <input type="text" name="tel" required="" placeholder="Введите телефон"  class="mod__input form-control">
+	        <button class="mod__sub" data-submit>Отправить</button>
+	    </form>		
+	</div>
+	<div class="mod__overlay"></div>
+    <div id="overlay">
+        <div id="thx">
+            Спасибо!<br>Мы обязательно вам перезвоним
+        </div>
+    </div>
+	<!-- form end -->		
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+	<script src="js/lightbox.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>
